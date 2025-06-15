@@ -1,0 +1,57 @@
+/* Global styles and CSS reset */
+:root {
+  --primary-color: #27ae60;
+  --primary-dark: #219653;
+  --secondary-color: #2d3748;
+  --background-dark: #1a202c;
+  --text-light: rgba(255, 255, 255, 0.87);
+  --text-muted: rgba(255, 255, 255, 0.6);
+  --card-bg: rgba(45, 55, 72, 0.7);
+  --border-radius: 8px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button {
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.hover-effect {
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.hover-effect:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+  }
+}
